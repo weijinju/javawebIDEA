@@ -1,0 +1,83 @@
+/*@font-face{
+    font-family: "myfont";
+    src: url("../font/raphaelicons-webfont.eot")format("eot"),
+         url("../font/raphaelicons-webfont.svg")format("svg"),
+         url("../font/raphaelicons-webfont.ttf")format("truetype"),
+         url("../font/raphaelicons-webfont.woff")format("woff");
+    font-weight: normal;
+    font-style: normal;
+}*/
+@keyframes myauto{
+    0%{top: 0%;}
+    25%{top: -100%;}
+    50%{top: -200%;}
+    75%{top: -300%;}
+    100%{top: -400%;}
+}
+body{
+    width: 85%;
+    height: 750px;
+    margin: 10px auto;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family: "宋体";
+    font-size: 38px;
+}
+.divtop{
+    width: 100%;
+    height: 100%;
+    border: 1px solid pink;
+    position: relative;
+    overflow: hidden;
+}
+.divswitch{
+    top:0%;
+    position: relative;
+    height: 500%;
+    transition: all .5s ease;
+    animation: myauto 10s 2s infinite alternate;
+}
+.mydiv{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    border: 1px solid green;
+    text-align: center;
+    /*background: linear-gradient(white,gray);*/
+    overflow: hidden;
+}
+.sp{
+    font-family: 'myfont';
+    font-size: 90px;
+    color: purple;
+    position: absolute;
+    top:20px;
+    left: calc(50%-40px);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    position: fixed;
+    width: 40px;
+    height:204px;
+    left: 50px;
+    top:calc(50% - 102px);
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: calc(20% - 1px);
+    background: green;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 1px;
+    vertical-align: middle;
+}

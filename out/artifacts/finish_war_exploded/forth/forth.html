@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片轮播</title>
+</head>
+<link type="text/css" rel="stylesheet" href="forth.css">
+<body>
+<h1>我家元元狗</h1>
+<div class="divtop">
+    <div class="divswitch">
+        <div id="div1" class="mydiv">
+            <img src="../img/2.png"/>
+        </div>
+        <div id="div2" class="mydiv">
+            <img src="../img/5.png"/>
+        </div>
+        <div id="div3" class="mydiv">
+            <img src="../img/4.png"/>
+        </div>
+        <div id="div4" class="mydiv">
+            <img src="../img/8.png"/>
+        </div>
+        <div id="div5" class="mydiv">
+            <img src="../img/2.png"/>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <a href="javascript:onmyclick(0);">1</a>
+    <a href="javascript:onmyclick(1);">2</a>
+    <a href="javascript:onmyclick(2);">3</a>
+    <a href="javascript:onmyclick(3);">4</a>
+    <a href="javascript:onmyclick(4);">5</a>
+</div>
+</body>
+<script type="text/javascript">
+    function onmyclick(idx){
+        var arrA = document.getElementsByTagName('a');
+        clearAll(arrA);
+        arrA[idx].style.backgroundColor = 'purple';
+        var myswitch = document.getElementsByClassName('divswitch');
+        myswitch[0].style.top = -idx * 100 + '%';
+    }
+    function clearAll(arr) {
+        for (i=0;i<arr.length;i++) {
+            arr[i].style.backgroundColor = 'green';
+        }
+    }
+</script>
+</html>

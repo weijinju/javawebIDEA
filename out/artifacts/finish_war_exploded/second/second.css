@@ -1,0 +1,63 @@
+body {
+    width: 80%;
+    height: 700px;
+    /*border: 1px solid green;*/
+    margin: 10px auto;
+    background-size: 80%;
+    height: 700px;
+}
+h1 {
+    text-align: center;
+    font-family: "宋体";
+}
+div	{
+    height: 600px;
+    border: 2px solid black;
+    position: relative;
+}
+input{
+    font-size: 20px;
+    color: blue;
+    position: absolute;
+}
+.top1 {
+    top: 50px;
+}
+.top2 {
+    top:150px;
+}
+.left1 {
+    left:250px;
+}
+.left2 {
+    left: 700px;
+}
+.top3 {
+    top:250px;
+}
+.top4{
+    top: 350px;
+}
+label {
+    font-size: 20px;
+    font-family: "宋体";
+    position: absolute;
+    color: purple;
+}
+.lbleft1 {
+    left: 100px;
+}
+.lbleft2 {
+    left: 600px;
+}
+.picture {
+    position: absolute;
+    left: 1050px;
+    top: 50px;
+    width: 230px;
+    height: 280px;
+    /*border: 1px solid black;*/
+}
+input[id="ipt7"] {
+    width: 700px;
+}
